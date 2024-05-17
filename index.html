@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Score Keeper</h1>
+    <label for="maxScore">Max score</label>
+    <select name="maxScore" id="maxScore">
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <button id="reset">Reset player scores</button>
+    <!-- <button id="addP1">Player 1 +1</button>
+    <button id="addP2">Player 2 +1</button> -->
+    <div class="scoreboard">
+        <div class="scoreCard">
+            <p>Player 1</p>
+
+            <div class="scoreKeeping">
+                <button id="minusP1">-</button>
+                <span id="PlayerOneScore"></span>
+
+                <button id="addP1">+</button>
+            </div>
+        </div>
+        <div>vs</div>
+        <div class="scoreCard">
+            <p>Player 2</p>
+            <div class="scoreKeeping">
+                <button id="minusP2">-</button>
+                <span id="PlayerTwoScore"></span>
+                <button id="addP2">+</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
